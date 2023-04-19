@@ -4,6 +4,7 @@ const timeList = document.querySelector('#time-list');
 let time = 11;
 const timeEl = document.querySelector('#time');
 const board = document.querySelector('#board');
+let score = 0;
 
 startBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -17,6 +18,14 @@ timeList.addEventListener('click', (event) =>{
     time = parseInt(event.target.getAttribute('data-time'));
     screens[1].classList.add('up');
     startGame();
+  }
+})
+
+board.addEventListener('click', (event) => {
+  if (event.target.classList.contains('circle')) {
+    score++;
+    event.target.remove();
+    createRandomCircle();
   }
 })
 
