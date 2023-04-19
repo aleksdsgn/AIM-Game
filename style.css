@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 * {
@@ -7,7 +7,7 @@
 
 body {
   color: #fff;
-  font-family: "Khula", sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -15,8 +15,10 @@ body {
 }
 
 h1 {
+  margin: 0;
+  padding-bottom: 4rem;
   line-height: 1.4;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 a {
@@ -26,10 +28,15 @@ a {
 
 a:hover {
   color: #16d9e3;
+  border-color: #16d9e3;
 }
 
 .start {
   font-size: 1.5rem;
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1.7rem 2rem 1.5rem;
 }
 
 .screen {
@@ -62,11 +69,12 @@ a:hover {
 .time-btn {
   background-color: transparent;
   border: 2px solid #c0c0c0;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   font-family: inherit;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+  padding: 0.7rem 1rem 0.5rem;
+  font-size: 1rem;
 }
 
 .time-btn:hover {
@@ -91,7 +99,7 @@ a:hover {
   background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
   position: absolute;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .primary {
