@@ -93,3 +93,11 @@ a:hover {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.primary {
+  color: #16d9e3;
+}
+
+.hide {
+  opacity: 0;
+}

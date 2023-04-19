@@ -1,7 +1,7 @@
 const startBtn = document.querySelector('#start');
 const screens = document.querySelectorAll('.screen');
 const timeList = document.querySelector('#time-list');
-let time = 11;
+let time = 0;
 const timeEl = document.querySelector('#time');
 const board = document.querySelector('#board');
 let score = 0;
@@ -29,9 +29,6 @@ board.addEventListener('click', (event) => {
   }
 })
 
-//DEBUG
-startGame();
-
 function startGame() {
   setInterval(decreaseTime, 1000);
   createRandomCircle();
@@ -57,7 +54,8 @@ function setTime(value) {
 }
 
 function finishGame() {
-
+  timeEl.parentNode.classList.add('hide');
+  board.innerHTML = `<h1>Ваш счет: <span class="primary">${score}</span></h1>`
 }
 
 function createRandomCircle() {
