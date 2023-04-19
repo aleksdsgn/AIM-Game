@@ -13,5 +13,10 @@ timeList.addEventListener('click', (event) =>{
     // console.log(event.target);
     // console.log(event.target.getAttribute('data-time'));
     time = parseInt(event.target.getAttribute('data-time'));
+    startGame();
   }
 })
+
+function startGame() {
+  screens[1].classList.add('up');
+}
